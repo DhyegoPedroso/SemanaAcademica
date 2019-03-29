@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'javac -B -DskipTests clean package' 
+                sh 'javac /SemanaAcademica/SemanaAcademica/src/view/JanelaPrincipal.java' 
             }
         }
     }
