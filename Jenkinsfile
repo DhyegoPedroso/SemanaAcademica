@@ -13,7 +13,7 @@ pipeline {
         stage('Docker Compile Class') {
             agent any
             steps {
-                sh 'cd SemanaAcademica/SemanaAcademica/src/view && docker run --rm -v $PWD:/app -w /app demo/oracle-java:8 javac JanelaPrincipal.java'
+                sh 'cd SemanaAcademica/src/view && docker run --rm -v $PWD:/app -w /app demo/oracle-java:8 javac JanelaPrincipal.java'
             }
         }    
        
